@@ -1,10 +1,5 @@
 body {
-    max-width: 1080px;
-    min-width: 960px;
-    margin: 0 auto 0 auto;
-    padding-top: 60px;
     font-family: "Palatino Linotype""Helvetica Neue", "Meiryo", "メイリオ", sans-serif;
-    /* position: relative; */
 }
 
 p,
@@ -12,147 +7,465 @@ li {
     line-height: 1.8;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1080px;
-    height: 65px;
-    margin: 0 auto 0 auto;
-    border-bottom: solid thin black;
-    position: fixed;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+@media screen and (min-width: 1080px) {
+
+    body {
+        width: 1080px;
+        margin: 0 auto 0 auto;
+        padding-top: 60px;
+
+        /* position: relative; */
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1080px;
+        height: 65px;
+        margin: 0 auto 0 auto;
+        border-bottom: solid thin black;
+        position: fixed;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #headerTitle {
+        font-size: 34px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+
+    #headerTitle>a {
+        text-decoration: none;
+        font-family: "Arial Black";
+        color: black;
+    }
+
+    #headerTitle>a:hover {
+        color: rgb(141, 141, 141);
+    }
+
+    #headerLink>a {
+        text-decoration: none;
+        font-family: "Meiryo UI", sans-serif;
+        color: black;
+        margin: 0 10px;
+    }
+
+    #headerLink>a:hover {
+        color: rgb(141, 141, 141);
+    }
+
+    #headerLink>a:active {
+        color: black;
+    }
+
+    #mainTop {
+        height: 180px;
+        background-image: url(images/topImage.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 1080px;
+    }
+
+    #mainTop>h1 {
+        text-align: center;
+        padding-top: 60px;
+        color: white;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    #mainTop>p {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #mainSns>a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        padding: 0 0 0 10px;
+    }
+
+    #mainExplain {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    #mainExplain>p {
+        font-size: 15px;
+    }
+
+    #mainExplain>div>p {
+        font-size: 15px;
+        margin-left: 1rem;
+    }
+
+    ul {
+        font-size: 15px;
+        margin-left: 1rem;
+    }
+
+    ul>li>ul {
+        list-style: none;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+
+    .headline {
+        font-size: 22px;
+        padding-top: 12px;
+    }
+
+    .headline::after {
+        content: url("images/blackLine.png");
+        margin-left: 7px;
+        padding: 10px 0;
+    }
+
+    .translationSet {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .japTranslation {
+        font-family: Palatino, Palatino Linotype, "Palatino Linotype", selif;
+        width: 46%;
+        margin-left: 1rem;
+        line-height: 1.7;
+        display: inline-block;
+    }
+
+    .greekText {
+        font-family: Palatino, Palatino Linotype, "Palatino Linotype", selif;
+        width: 46%;
+        margin-right: 1rem;
+        line-height: 2;
+        display: inline-block;
+    }
+
+    #aristotleIndex>ul>li,
+    #aristotleIndex>ul>li>ul>li {
+        font-size: 13px;
+    }
+
+    footer>p {
+        text-align: center;
+        font-size: 10px;
+    }
 }
 
-#headerTitle {
-    font-size: 34px;
-    font-weight: bold;
-    padding-left: 10px;
+@media screen and (max-width: 1079px) and (min-width: 768px) {
+    body {
+        width: 98vw;
+        margin: 0 auto 0 auto;
+        padding-top: 60px;
+
+        /* position: relative; */
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98vw;
+        height: 65px;
+        margin: 0 auto 0 auto;
+        border-bottom: solid thin black;
+        position: fixed;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #headerTitle {
+        font-size: 34px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+
+    #headerTitle>a {
+        text-decoration: none;
+        font-family: "Arial Black";
+        color: black;
+    }
+
+    #headerTitle>a:hover {
+        color: rgb(141, 141, 141);
+    }
+
+    #headerLink>a {
+        text-decoration: none;
+        font-family: "Meiryo UI", sans-serif;
+        color: black;
+        margin: 0 10px;
+    }
+
+    #headerLink>a:hover {
+        color: rgb(141, 141, 141);
+    }
+
+    #headerLink>a:active {
+        color: black;
+    }
+
+    #mainTop {
+        height: 180px;
+        background-image: url(images/topImage.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 98vw;
+    }
+
+    #mainTop>h1 {
+        text-align: center;
+        padding-top: 60px;
+        color: white;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    #mainTop>p {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #mainSns>a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        padding: 0 0 0 10px;
+    }
+
+    #mainExplain {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    #mainExplain>p {
+        font-size: 15px;
+    }
+
+    #mainExplain>div>p {
+        font-size: 15px;
+        margin-left: 1rem;
+    }
+
+    ul {
+        font-size: 15px;
+        margin-left: 1rem;
+    }
+
+    ul>li>ul {
+        list-style: none;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+
+    .headline {
+        font-size: 22px;
+        padding-top: 12px;
+    }
+
+    .headline::after {
+        content: url("images/blackLine.png");
+        margin-left: 7px;
+        padding: 10px 0;
+    }
+
+    .translationSet {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .japTranslation {
+        font-family: Palatino, Palatino Linotype, "Palatino Linotype", selif;
+        width: 46%;
+        margin-left: 1rem;
+        line-height: 1.7;
+        display: inline-block;
+    }
+
+    .greekText {
+        font-family: Palatino, Palatino Linotype, "Palatino Linotype", selif;
+        width: 46%;
+        margin-right: 1rem;
+        line-height: 2;
+        display: inline-block;
+    }
+
+    #aristotleIndex>ul>li,
+    #aristotleIndex>ul>li>ul>li {
+        font-size: 13px;
+    }
+
+    footer>p {
+        text-align: center;
+        font-size: 10px;
+    }
 }
 
-#headerTitle>a {
-    text-decoration: none;
-    font-family: "Arial Black";
-    color: black;
-}
+@media screen and (max-width: 767px) {
+    body {
+        width: 98vw;
+        margin: 0 auto 0 auto;
+        padding-top: 60px;
 
-#headerTitle>a:hover {
-    color: rgb(141, 141, 141);
-}
+        /* position: relative; */
+    }
 
-#headerLink>a {
-    text-decoration: none;
-    font-family: "Meiryo UI", sans-serif;
-    color: black;
-    margin: 0 10px;
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98vw;
+        height: 65px;
+        margin: 0 auto 0 auto;
+        border-bottom: solid thin black;
+        position: fixed;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
 
-#headerLink>a:hover {
-    color: rgb(141, 141, 141);
-}
+    #headerTitle {
+        font-size: 34px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
 
-#headerLink>a:active {
-    color: black;
-}
+    #headerTitle>a {
+        text-decoration: none;
+        font-family: "Arial Black";
+        color: black;
+    }
 
-#mainTop {
-    height: 180px;
-    background-image: url(images/topImage.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1080px;
-    min-width: 960px;
-}
+    #headerTitle>a:hover {
+        color: rgb(141, 141, 141);
+    }
 
-#mainTop>h1 {
-    text-align: center;
-    padding-top: 60px;
-    color: white;
-    font-weight: bold;
-    font-size: 28px;
-}
+    #headerLink>a {
+        text-decoration: none;
+        font-family: "Meiryo UI", sans-serif;
+        color: black;
+        margin: 0 10px;
+    }
 
-#mainTop>p {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-}
+    #headerLink>a:hover {
+        color: rgb(141, 141, 141);
+    }
 
-#mainSns>a {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    padding: 0 0 0 10px;
-}
+    #headerLink>a:active {
+        color: black;
+    }
 
-#mainExplain {
-    width: 95%;
-    margin: 0 auto 0 auto;
-}
+    #mainTop {
+        height: 180px;
+        background-image: url(images/topImage.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 98vw;
+    }
 
-#mainExplain>p {
-    font-size: 15px;
-}
+    #mainTop>h1 {
+        text-align: center;
+        padding-top: 60px;
+        color: white;
+        font-weight: bold;
+        font-size: 28px;
+    }
 
-#mainExplain>div>p {
-    font-size: 15px;
-    margin-left: 1rem;
-}
+    #mainTop>p {
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
 
-ul {
-    font-size: 15px;
-    margin-left: 1rem;
-}
+    #mainSns>a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        padding: 0 0 0 10px;
+    }
 
-ul>li>ul {
-    list-style: none;
-}
+    #mainExplain {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
 
-h4 {
-    font-size: 18px;
-    margin-left: 1rem;
-}
+    #mainExplain>p {
+        font-size: 15px;
+    }
 
-.headline {
-    font-size: 22px;
-    padding-top: 12px;
-}
+    #mainExplain>div>p {
+        font-size: 15px;
+        margin-left: 1rem;
+    }
 
-.headline::after {
-    content: url("images/blackLine.png");
-    margin-left: 7px;
-    padding: 10px 0;
-}
+    ul {
+        font-size: 15px;
+        margin-left: 1rem;
+    }
 
-.translationSet {
-    display: flex;
-    justify-content: space-between;
-}
+    ul>li>ul {
+        list-style: none;
+    }
 
-.japTranslation {
-    font-family: Palatino, Palatino Linotype, "Palatino Linotype", selif;
-    width: 46%;
-    margin-left: 1rem;
-    line-height: 1.7;
-    display: inline-block;
-}
+    h4 {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
 
-.greekText {
-    font-family: Palatino, Palatino Linotype, "Palatino Linotype", selif;
-    width: 46%;
-    margin-right: 1rem;
-    line-height: 2;
-    display: inline-block;
-}
+    .headline {
+        font-size: 22px;
+        padding-top: 12px;
+    }
 
-#aristotleIndex>ul>li,
-#aristotleIndex>ul>li>ul>li {
-    font-size: 13px;
-}
+    .headline::after {
+        content: url("images/blackLine.png");
+        margin-left: 7px;
+        padding: 10px 0;
+    }
 
-footer>p {
-    text-align: center;
-    font-size: 10px;
+    .translationSet {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .japTranslation {
+        font-family: Palatino, Palatino Linotype, "Palatino Linotype", selif;
+        width: 46%;
+        margin-left: 1rem;
+        line-height: 1.7;
+        display: inline-block;
+    }
+
+    .greekText {
+        font-family: Palatino, Palatino Linotype, "Palatino Linotype", selif;
+        width: 46%;
+        margin-right: 1rem;
+        line-height: 2;
+        display: inline-block;
+    }
+
+    #aristotleIndex>ul>li,
+    #aristotleIndex>ul>li>ul>li {
+        font-size: 13px;
+    }
+
+    footer>p {
+        text-align: center;
+        font-size: 10px;
+    }
 }

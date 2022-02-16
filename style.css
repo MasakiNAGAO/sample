@@ -148,6 +148,11 @@ body {
         font-size: 13px;
     }
 
+    #googleform {
+        width: 800px;
+        height: 990px;
+    }
+
     footer>p {
         text-align: center;
         font-size: 10px;
@@ -297,6 +302,11 @@ body {
     #aristotleIndex>ul>li,
     #aristotleIndex>ul>li>ul>li {
         font-size: 13px;
+    }
+
+    #googleform {
+        width: 700px;
+        height: 990px;
     }
 
     footer>p {
@@ -461,6 +471,11 @@ body {
     #aristotleIndex>ul>li,
     #aristotleIndex>ul>li>ul>li {
         font-size: 13px;
+    }
+
+    #googleform {
+        width: 700px;
+        height: 990px;
     }
 
     footer>p {

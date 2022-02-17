@@ -100,7 +100,8 @@ body {
         margin-top: 20px;
     }
 
-    #mainExplain>div>p {
+    #mainExplain>div>p,
+    .caption {
         font-size: 15px;
         margin-left: 1rem;
     }
@@ -262,7 +263,8 @@ body {
         margin-top: 20px;
     }
 
-    #mainExplain>div>p {
+    #mainExplain>div>p,
+    .caption {
         font-size: 15px;
         margin-left: 1rem;
     }
@@ -388,7 +390,7 @@ body {
         top: 0;
         background-color: white;
         border: solid thin black;
-        height: 210px;
+        height: 250px;
         width: 190px;
         display: none;
         z-index: 100;
@@ -440,7 +442,8 @@ body {
         margin-top: 20px;
     }
 
-    #mainExplain>div>p {
+    #mainExplain>div>p,
+    .caption {
         font-size: 15px;
         margin-left: 1rem;
     }
@@ -562,7 +565,7 @@ body {
         top: 0;
         background-color: white;
         border: solid thin black;
-        height: 210px;
+        height: 250px;
         width: 190px;
         display: none;
         z-index: 100;
@@ -615,7 +618,8 @@ body {
         font-size: 13px;
     }
 
-    #mainExplain>div>p {
+    #mainExplain>div>p,
+    .caption {
         font-size: 13px;
         margin-left: 1rem;
     }

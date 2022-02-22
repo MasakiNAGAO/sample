@@ -19,6 +19,17 @@ body {
     color: rgb(141, 141, 141);
 }
 
+.link,
+.link:visited {
+    color: rgb(54, 54, 182);
+}
+
+.link:hover {
+    color: rgb(255, 87, 87);
+    position: relative;
+    top: 1px;
+}
+
 @media screen and (min-width: 1080px) {
 
     body {
